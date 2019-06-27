@@ -1,0 +1,277 @@
+/*
+Theme Name: Live Theme
+Author: Efren Vasquez
+Description: Live Class Theme
+Version: 1.0
+License: Open
+Theme Domain: live-theme
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  /* background-color: lightblue; */
+  padding: 20px 10px 20px 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  line-height: 2;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #F79256;
+  margin-top: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+/* Header & Menu Styles - Base */
+
+.header {
+  background-color: #1D4E89;
+  color: #FFFFFF;
+}
+
+.header .container {
+  background-color: #1D4E89;
+}
+
+.header .row:first-of-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .three.columns, .header .nine.columns {
+  align-self: center;
+  justify-content: center;
+}
+
+.header .three.columns a {
+  text-decoration: none;
+}
+
+.header .nine.columns a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 10px 15px 10px;
+  border-bottom: 3px solid #FFFFFF;
+  transition: 0.25s;
+  line-height: 4;
+}
+
+.header .nine.columns a:hover {
+  color: #00B2CA;
+  border-bottom: 3px solid #00B2CA;
+  transition: 0.25s;
+}
+
+ul#menu-header-menu li {
+  display: inline;
+  margin-left: 20px;
+}
+
+
+
+/* Page-Home Template Styles */
+
+.hero-image-wrap {
+  width: 100%;
+  max-width: 960;
+  margin: 0 auto;
+}
+
+.sow-slider-image-wrapper {
+  height: 500px;
+}
+
+.about-us-text {
+  margin: 30px auto 70px auto;
+}
+
+.bottom-right {
+  margin-bottom: 50px;
+}
+
+.widget-footer {
+  padding-bottom: 30px;
+}
+
+.widget-footer h3 {
+  color: #00B2CA;
+}
+
+
+
+/* Post Styles */
+
+.posts img {
+  width: 100%;
+  height: auto;
+}
+
+.post-title {
+  margin-bottom: 0;
+}
+
+.post-info {
+  margin-left: 2px;
+}
+
+.post-feature img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+
+
+/* Contact Form Styles */
+
+.wpcf7-form input, .wpcf7-form textarea {
+  width: 100%;
+}
+
+
+
+/* Button Styles */
+
+.button.button-primary, input#searchsubmit, input.wpcf7-form-control.wpcf7-submit {
+  border: 1px solid #00B2CA;
+  color: #FFFFFF;
+  background-color: #00B2CA;
+  transition: 0.25s;
+}
+
+.button.button-primary:hover, input#searchsubmit:hover, input.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #1D4E89;
+  border: 1px solid #1D4E89;
+  transition: 0.25s;
+}
+
+footer input#searchsubmit:hover {
+  background-color: #F79256;
+  border: 1px solid #F79256;
+  transition: 0.25s;
+}
+
+
+
+/* Footer Styles */
+
+footer .container {
+  background-color: #1D4E89;
+  padding: 60px 25px 35px;
+  color: #FFFFFF;
+}
+
+.footer {
+  background-color: #1D4E89;
+  color: #FFFFFF;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.widget-right ul, .widget-left ul {
+  list-style-type: none;
+}
+
+.widget-right a, .widget-middle input, .widget-left a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.widget-right a:hover, .widget-left a:hover {
+  opacity: 0.8;
+  transition: 0.25s;
+}
+
+ul#menu-header-menu {
+    display: flex;
+}
+
+
+/* Sidebar Styles  */
+
+.sidebar {
+  margin: 30px auto;
+}
+
+h3.widget-title {
+  font-size: 20px;
+}
+
+input#s {
+  width: 95%;
+}
+
+.menu {
+    display: none;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 550px) {
+  .container {
+    padding: 30px;
+  }
+
+  .nine.columns {
+    width: 100.0%;
+    margin-left: 0;
+  }
+
+  .three.columns {
+    width: 100.0%;
+  }
+
+  .posts {
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (min-width: 750px) {
+  .nine.columns {
+    width: 74%;
+  }
+
+  .three.columns {
+    width: 22%;
+  }
+
+  .header .row:first-of-type {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1 {
+    display: flex;
+  }
+
+  .menu-header-menu-container {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .wpcf7-form input, .wpcf7-form textarea {
+    width: 80%;
+  }
+}
