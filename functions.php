@@ -143,6 +143,39 @@
 
   add_action('init', 'custom_menus');
 
+  function example_theme_scripts(){
+    wp_enqueue_style('skeleton', get_template_directory_uri() . '/css/skeleton.css');
+    wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.css');
+
+    //Main CSS
+    wp_enqueue_style('main-styles', get_stylesheet_uri());
+
+    //Javascript File
+    wp_enqueue_style('scrip-name', get_template_directory_uri() . '/js/script.js');
+  }
+
+  add_action('wp_enqueue_scripts', 'example_theme_scripts');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ?>
